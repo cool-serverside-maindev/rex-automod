@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('mod!'))
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game("Bad words"))
+    await bot.change_presence(activity=discord.Game("swear be gone"))
     print("Ready")
 
         
@@ -16,7 +16,7 @@ async def on_message(message):
     for word in bad_words:
         if message.content.count(word) > 0:
             await message.channel.purge(limit=1)
-            await message.channel.send(f"Please stop sending bad words! {message.author.mention}")
+            await message.channel.send(f"stop swearing in my server BITCH! {message.author.mention}")
 
                           
-bot.run(token)
+bot.run(NzQ4NTkxODc0MDcxMTk5ODY2.X0fqgg.aEIFyxRb6jNWVi4CT-_T47Laqb0)
